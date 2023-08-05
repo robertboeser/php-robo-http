@@ -1,0 +1,20 @@
+{
+    "name": "robertboeser/robo-http",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Böser",
+            "email": "code@robertboeser.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Robo\\RoboHttp\\": "src/"
+        }
+    }
+}
