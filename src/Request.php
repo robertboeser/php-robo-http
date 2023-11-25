@@ -30,9 +30,13 @@ class Request {
         ];
         return $this->req($path, ['http' => $opts]);
     }
-
-    function get($path) {
+/*
+    function get_simple($path) {
         return $this->req($path);
+    }
+*/
+    function get($path, $headers) {
+        return $this->rex($path, 'GET', $headers);
     }
 
     function put($path, $headers, $body=null) {
