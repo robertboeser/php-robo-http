@@ -35,19 +35,19 @@ class Request {
         return $this->req($path);
     }
 */
-    function get($path, $headers) {
+    function get($path, $headers=[]) {
         return $this->rex($path, 'GET', $headers);
     }
 
-    function put($path, $headers, $body=null) {
+    function put($path, $headers=[], $body=null) {
         return $this->rex($path, 'PUT', $headers, $body);
     }
 
-    function post($path, $headers, $body=null) {
+    function post($path, $headers=[], $body=null) {
         return $this->rex($path, 'POST', $headers, $body);
     }
 
-    function delete($path, $headers, $body=null) {
+    function delete($path, $headers=[], $body=null) {
         return $this->rex($path, 'DELETE', $headers, $body);
     }
 }
